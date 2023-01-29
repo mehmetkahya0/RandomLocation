@@ -23,3 +23,7 @@ Please follow the 'code of conduct' of this project.
 ## Feedback
 
 If you have any feedback, please contact us at mehmetkahyakas5@gmail.com.
+
+
+##Note
+Help was received from ChatGPT while doing this project.
