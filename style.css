@@ -1,0 +1,59 @@
+:root{
+    font-family: monospace;
+}
+
+#random-location-button {
+    padding: 15px 30px;
+    background-color: lightblue;
+    border: none;
+    font-weight: bolder;
+    border-radius: 5px;
+    color: rgb(23, 23, 23);
+    font-size: 22px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+  }
+
+  #random-location-button:hover {
+    background-color: rgb(0, 146, 240);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  }
+
+  .contact {
+    padding: 10px;
+    display: flex;
+    position: center;
+    align-items: space-around;
+    justify-content: center;
+    flex-direction: row;
+
+  }
+
+  .contact a {
+    margin: 10px;
+    font-size: 2rem;
+    text-align: center;
+    display: inline-block;
+    color: #0b0b0b;
+  }
+
+  .contact:hover {
+    color: #00754a;
+
+  }
+
+
+  .pop-up {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 20px;
+    padding: 0.3%;
+    background-color: rgba(173, 216, 230, 0.471);
+    border-radius: 10px;
+    font-weight: bold;
+    padding-left: 2%;
+    padding-right: 1%;
+    
+    
+  }
