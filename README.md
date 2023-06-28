@@ -4,7 +4,7 @@
 
 [![AGPL License](https://img.shields.io/badge/license-AGPL-blue.svg)](http://www.gnu.org/licenses/agpl-3.0)
 
-You can try here: https://mehmetkahya0.github.io/RandomLocation/
+You can try here: https://randomlocation.mehmet0.repl.co
 NOTE: Sometimes when you click on the link, you will only see a blue screen, don't worry, just walk away because it's just an ocean :D
 ## Contribution
 
