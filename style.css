@@ -37,13 +37,9 @@
     color: #0b0b0b;
   }
 
-  .contact:hover {
-    color: #00754a;
-
-  }
 
 
-  .pop-up {
+.pop-up {
     position: absolute;
     top: 0;
     right: 0;
@@ -54,6 +50,28 @@
     font-weight: bold;
     padding-left: 2%;
     padding-right: 1%;
-    
-    
+}
+
+.bottomText{
+  font-family:monospace;
+  font-weight: bold;
+  font-size: larger; 
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+  height: 0.1vh; 
+  line-height: 1.5;
+}
+
+/* Mobil cihazlarda */
+@media (max-width: 600px) {
+  .pop-up{
+    font-size: smaller;
+    font-weight: bolder
+
   }
+
+  .bottomText{
+    font-size: small;
+  }
+}
