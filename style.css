@@ -19,7 +19,7 @@ body {
   background-color: var(--main-bg-color);
 }
 
-/* center a mainButton*/
+/* center a mainButton */
 .mainButton {
   position: absolute; /* Ensure the element is positioned relative to its nearest positioned ancestor */
   top: 50%;
@@ -52,11 +52,12 @@ body {
 
 .pop-up {
   position: fixed;
-  top: 0;
+  font-weight: bolder;
+  bottom: 0;
   right: 0;
   font-size: 10px;
   margin: 10px;
-  background-color: #003f7f;
+  background-color: #000000;
   color: white !important;
   border-radius: 5px;
   padding: 5px 10px;
@@ -64,6 +65,7 @@ body {
 
 .pop-up a {
   color: white;
+  font-weight: normal;
 }
 
 footer {
@@ -89,4 +91,52 @@ footer {
   gap: 1rem;
   margin: 0.25rem;
   font-size: medium;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .mainButton button {
+    padding: 15px 30px;
+    font-size: medium;
+  }
+
+  .pop-up {
+    display: none;
+  }
+
+  footer {
+    font-size: smaller;
+  }
+
+  .contact {
+    flex-direction: row;
+    gap: 0.5rem;
+  }
+
+  .contact a {
+    font-size: small;
+  }
+}
+
+@media (max-width: 480px) {
+  .mainButton button {
+    padding: 10px 20px;
+    font-size: small;
+  }
+
+  .pop-up {
+    display: none;
+  }
+
+  footer {
+    font-size: x-small;
+  }
+
+  .contact {
+    gap: 0.25rem;
+  }
+
+  .contact a {
+    font-size: x-small;
+  }
 }
