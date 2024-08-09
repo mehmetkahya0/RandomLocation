@@ -120,8 +120,9 @@ footer {
 
 @media (max-width: 480px) {
   .mainButton button {
-    padding: 10px 20px;
+    padding: 20px 50px;
     font-size: small;
+    font-weight: bolder !important;
   }
 
   .pop-up {
