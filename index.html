@@ -1,51 +1,78 @@
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <link type="text/css" rel="stylesheet" href="style.css" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="script" href="script.js">
-  <link href="//db.onlinewebfonts.com/c/d7e8a95865396cddca89b00080d2cba6?family=SoDo+Sans+SemiBold" rel="stylesheet"
-    type="text/css" />
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css">
-  <title>Random Location ✈️</title>
-  <script id="_wau9tr">var _wau = _wau || []; _wau.push(["dynamic", "cry1yczj7f", "9tr", "", "small"]);</script>
-  <script async src="//waust.at/d.js"></script>
-  <link rel="stylesheet" src="style.css">
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link type="text/css" rel="stylesheet" href="style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="script" href="script.js" />
+    <link
+      href="//db.onlinewebfonts.com/c/d7e8a95865396cddca89b00080d2cba6?family=SoDo+Sans+SemiBold"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.13.0/css/all.css"
+    />
+    <title>Random Location ✈️</title>
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.13.0/css/all.css"
+    />
+    <script id="_wau9tr">
+      var _wau = _wau || [];
+      _wau.push(["dynamic", "cry1yczj7f", "9tr", "", "small"]);
+    </script>
+    <script async src="//waust.at/d.js"></script>
+    <link rel="stylesheet" src="style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Poppins:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="mainButton">
+      <button id="random-location-button">Random Location✈️</button>
+    </div>
 
-</head>
+    <div class="pop-up">
+      <p>
+        ❗️ Announce:
+        <a href="https://randomstrangestlocations.mehmet0.repl.co"
+          >Random Strangest Locations is out!</a
+        >
+      </p>
+    </div>
 
+    <footer>
+      <p>
+        Mehmet Kahya -
+        <a href="">This website is totally open-source project</a>
+      </p>
+      <div class="contact">
+        <a href="https://twitter.com/Mehmet1122334" target="_blank"
+          ><i class="fab fa-twitter"></i
+        ></a>
+        <a href="https://github.com/mehmetkahya0" target="_blank"
+          ><i class="fab fa-github"></i
+        ></a>
+        <a href="https://www.instagram.com/mehmettkahya_" target="_blank"
+          ><i class="fab fa-instagram"></i
+        ></a>
+      </div>
+    </footer>
 
-<div style="display: flex; justify-content: center; align-items: center; height: 90%;">
-  <button id="random-location-button">Random Location✈️</button>
-</div>
+    <script>
+      const button = document.querySelector("#random-location-button");
 
-<script>alert("Sometimes when you click on the link, you will only see a blue screen, don't worry, just walk away because it's just an ocean :D")</script>
-
-<div class="pop-up">
-  <p>❗️ Announce: <a href='https://randomstrangestlocations.mehmet0.repl.co'>Random Strangest Locations is out!</a></p>
-</div>
-
-  <p class="bottomText">
-  <br>Mehmet Kahya - This site is a totally open-source project </p>
-
-<div class="contact">
-  <a href="https://twitter.com/Mehmet1122334" target="_blank"><i class='fab fa-twitter'></i></a>
-  <a href="https://github.com/mehmetkahya0" target="_blank"><i class='fab fa-github'></i></a>
-  <a href="https://www.instagram.com/mehmettkahya_" target="_blank"><i class='fab fa-instagram'></i></a>
-</div>
-
-
-
-<script>
-  const button = document.querySelector("#random-location-button");
-
-  button.addEventListener("click", function () {
-    const lat = Math.random() * 180 - 90;
-    const lng = Math.random() * 360 - 180;
-    const url = `https://www.google.com/maps/@${lat},${lng},8z`;
-    window.open(url, "_blank");
-  });
-</script>
-
-</body>
+      button.addEventListener("click", function () {
+        const lat = Math.random() * 180 - 90;
+        const lng = Math.random() * 360 - 180;
+        const url = `https://www.google.com/maps/@${lat},${lng},8z`;
+        window.open(url, "_blank");
+      });
+    </script>
+  </body>
 </html>

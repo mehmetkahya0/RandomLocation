@@ -1,77 +1,92 @@
-:root{
-    font-family: monospace;
+:root {
+  font-family: "Poppins", sans-serif !important;
+
+  width: 100%;
+  height: 100vh;
+  box-sizing: border-box;
+
+  --main-bg-color: #ffffff;
+  --main-text-color: #333;
+  --main-link-color: #007bff;
+  --main-link-hover-color: #0056b3;
+  --main-border-color: #ccc;
+  --main-border-radius: 5px;
+  --main-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  --main-transition: 0.3s;
 }
 
-#random-location-button {
-    padding: 15px 30px;
-    background-color: lightblue;
-    border: none;
-    font-weight: bolder;
-    border-radius: 5px;
-    color: rgb(23, 23, 23);
-    font-size: 22px;
-    cursor: pointer;
-    transition: background-color 0.3s ease-in-out;
-  }
+body {
+  background-color: var(--main-bg-color);
+}
 
-  #random-location-button:hover {
-    background-color: rgb(0, 146, 240);
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-  }
+/* center a mainButton*/
+.mainButton {
+  position: absolute; /* Ensure the element is positioned relative to its nearest positioned ancestor */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
 
-  .contact {
-    padding: 10px;
-    display: flex;
-    position: center;
-    align-items: space-around;
-    justify-content: center;
-    flex-direction: row;
+.mainButton button {
+  padding: 20px 40px;
+  font-weight: bolder;
+  font-size: large;
+  background-color: #006fe6;
+  color: whitesmoke;
+  border: none;
+  border-radius: 5px;
+  transition: 0.3s all ease-in-out;
+}
 
-  }
+.mainButton button:hover {
+  background-color: #0056b3;
+  cursor: pointer;
+  transition: 0.3s all ease-in-out;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
 
-  .contact a {
-    margin: 10px;
-    font-size: 2rem;
-    text-align: center;
-    display: inline-block;
-    color: #0b0b0b;
-  }
-
-
+.mainButton button:active {
+  background-color: #003f7f;
+  transition: 0.3s all ease-in-out;
+}
 
 .pop-up {
-    position: absolute;
-    top: 0;
-    right: 0;
-    margin: 20px;
-    padding: 0.3%;
-    background-color: rgba(173, 216, 230, 0.471);
-    border-radius: 10px;
-    font-weight: bold;
-    padding-left: 2%;
-    padding-right: 1%;
+  position: fixed;
+  top: 0;
+  right: 0;
+  font-size: 10px;
+  margin: 10px;
+  background-color: #003f7f;
+  color: white !important;
+  border-radius: 5px;
+  padding: 5px 10px;
 }
 
-.bottomText{
-  font-family:monospace;
-  font-weight: bold;
-  font-size: larger; 
-  display: flex; 
-  justify-content: center; 
-  align-items: center; 
-  height: 0.1vh; 
-  line-height: 1.5;
+.pop-up a {
+  color: white;
 }
 
-/* Mobil cihazlarda */
-@media (max-width: 600px) {
-  .pop-up{
-    font-size: smaller;
-    font-weight: bolder
+footer {
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  text-align: center;
+  font-weight: bolder;
+  font-size: smaller;
+}
 
-  }
+.contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+  font-size: medium;
+}
 
-  .bottomText{
-    font-size: small;
-  }
+.contact a {
+  color: rgb(0, 0, 0);
+  gap: 1rem;
+  margin: 0.25rem;
+  font-size: medium;
 }
